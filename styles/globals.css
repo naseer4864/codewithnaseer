@@ -1,0 +1,549 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: rgb(224, 239, 239);
+    
+}
+
+.container {
+    width: 100%;
+    padding: 15px 0px;
+    background-color: rgb(14, 51, 65);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-home,.nav-stack,.nav-contacts {
+    color: white;
+    transition: 1s ease;
+    padding: 12px ;
+}
+
+.nav-home:hover {
+    background-color: white;
+    color: rgb(14, 51, 65);
+}
+
+
+.nav-contacts:hover {
+    background-color: white;
+    color: rgb(14, 51, 65);
+}
+
+.nav-stack:hover {
+    background-color: white;
+    color: rgb(14, 51, 65);
+}
+
+
+.footer {
+    width: 100%;
+    padding: 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(14, 51, 65) ;
+    color: white;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .nav-link-mobile {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 57px;
+        width: 100%;
+        height: 100vh;
+        outline: none;
+        border: none;
+        background-color: rgb(14, 51, 65);
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+
+    .nav-home,
+    .nav-contacts,.nav-stack {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+
+    }
+
+    .xmark,.fbars {
+        color: white;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .nav-link-mobile {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 51px;
+        width: 100%;
+        height: 100vh;
+        outline: none;
+        border: none;
+        background-color: rgb(14, 51, 65);
+       
+    }
+}
+
+.home-slider {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.slider {
+    max-width: 90%;
+    height: 400px;
+    text-align: center;
+    
+}
+
+.slider-1 {
+    width: 100%;
+    height: 370px;
+    background-image: url("../public/images/pic-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    transition: 1s ease-in-out;
+}
+
+.overley-1,.overley-2,.overley-3,
+.overley-4,.overley-5,.overley-6 {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 370px;
+    opacity: 0.5;
+    display: none;
+    transition: 1s ease-in-out;
+    
+}
+
+.overley-1 > p {
+    position: absolute;
+    margin: 185px 0px 0px 331px;
+    background-color: rgb(14, 51, 65);
+    color: white;
+    padding: 10px;
+    border: 3px solid gray;
+    opacity: 100;
+    cursor: pointer;
+}
+
+.slider-1:hover .overley-1 {
+    display: block;
+}
+
+
+.slider-2 {
+    width: 100%;
+    height: 370px;
+    background-image: url("../public/images/pic-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    transition: 1s ease-in-out;
+}
+
+
+.overley-2 > p {
+    position: absolute;
+    margin: 185px 0px 0px 331px;
+    background-color: rgb(14, 51, 65);
+    color: white;
+    padding: 10px;
+    border: 3px solid gray;
+    opacity: 100;
+    cursor: pointer;
+}
+
+.slider-2:hover .overley-2 {
+    display: block;
+}
+
+
+
+
+.slider-3 {
+    width: 100%;
+    height: 370px;
+    background-image: url("../public/images/pic-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    transition: 1s ease-in-out;
+}
+
+
+
+.overley-3 > p {
+    position: absolute;
+    margin: 185px 0px 0px 331px;
+    background-color: rgb(14, 51, 65);
+    color: white;
+    padding: 10px;
+    border: 3px solid gray;
+    opacity: 100;
+    cursor: pointer;
+}
+
+.slider-3:hover .overley-3 {
+    display: block;
+}
+
+.slider-4 {
+    width: 100%;
+    height: 370px;
+    background-image: url("../public/images/pic-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    transition: 1s ease-in-out;
+}
+
+
+
+.overley-4 > p {
+    position: absolute;
+    margin: 185px 0px 0px 331px;
+    background-color: rgb(14, 51, 65);
+    color: white;
+    padding: 10px;
+    border: 3px solid gray;
+    opacity: 100;
+    cursor: pointer;
+}
+
+.slider-4:hover .overley-4 {
+    display: block;
+}
+
+.slider-5 {
+    width: 100%;
+    height: 370px;
+    background-image: url("../public/images/pic-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    transition: 1s ease-in-out;
+}
+
+
+
+.overley-5 > p {
+    position: absolute;
+    margin: 185px 0px 0px 331px;
+    background-color: rgb(14, 51, 65);
+    color: white;
+    padding: 10px;
+    border: 3px solid gray;
+    opacity: 100;
+    cursor: pointer;
+}
+
+.slider-5:hover .overley-5 {
+    display: block;
+}
+
+
+.slider-6 {
+    width: 100%;
+    height: 370px;
+    background-image: url("../public/images/pic-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    transition: 1s ease-in-out;
+}
+
+.overley-6 > p {
+    position: absolute;
+    margin: 185px 0px 0px 331px;
+    background-color: rgb(14, 51, 65);
+    color: white;
+    padding: 10px;
+    border: 3px solid gray;
+    opacity: 100;
+    cursor: pointer;
+}
+
+.slider-6:hover .overley-6 {
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .home-slider {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
+
+/* youtube styles started below */
+
+.youtube {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.youtube > h2 {
+    padding: 20px;
+    color: rgb(14, 51, 65);
+}
+
+
+.sub-youtube {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.you-link {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+}
+
+a > h4 {
+    padding: 10px;
+    color: rgb(14, 51, 65);
+}
+
+
+/* contact section start below */
+
+.contact {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-contact {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.about-us {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about-us > h3 {
+    padding: 10px;
+    color: rgb(14, 51, 65);
+    
+}
+.about-us > p {
+    padding: 10px;
+    color: gray;
+    font-size: 1.1rem;
+    
+}
+
+.con-banner {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.student {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px 0px;
+}
+
+.tex1 {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(14, 51, 65);
+}
+
+.tex1 > p {
+    color: white;
+    padding: 10px;
+}
+
+.tex1 > h3 {
+    color: white;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:747px) {
+    .student {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tex1 {
+        width: 100%;
+    }
+}
+
+.call-us {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.call-us > h3 {
+    padding: 10px;
+    color: rgb(14, 51, 65);
+}
+
+#myform {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.first-name,.last-name,
+.email,.number,.option {
+    width: 70%;
+    padding: 15px 0px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.msg {
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+    border: none;
+}
+
+#myform > button {
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(14, 51, 65);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:770px) {
+    .call-us {
+        width: 100%;
+    }
+
+    .first-name,.last-name,
+    .email,.number,.option,.msg {
+    width: 100%;
+    }
+}
+
